@@ -20,7 +20,10 @@
   <h2>All the Parks!</h2>
   <ul>
     <% parks.forEach(park => { %>
-        <li>🏞 <%= park.name %> is <%= park.visited ? "visited" : "haven't been yet!"%> </li>
+        <li>
+          🏞 
+          <a href="/parks/"<%= park._id %>"><%= park.name %></a>
+           is <%= park.visited ? "visited" : "haven't been yet!"%> </li>
     <% }) %>
   </ul>
 </section>

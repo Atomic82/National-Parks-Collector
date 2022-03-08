@@ -31,7 +31,12 @@ function create(req, res) {
   })  
 }
 
+function show(req, res) {
+  console.log("testing the showing of a park")
+}
+
 export {
   index,
-  create
+  create,
+  show
 }
