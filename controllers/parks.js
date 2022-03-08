@@ -32,7 +32,19 @@ function create(req, res) {
 }
 
 function show(req, res) {
-  console.log("testing the showing of a park")
+  Park.findById(req.params.id)
+  .populate("owner")
+  .then(park => {
+    console.log(park)
+    res.render('parks/show', {
+      park,
+      title: "🏞 show"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/parks")
+  })
 }
 
 export {
