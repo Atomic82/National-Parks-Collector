@@ -3,6 +3,20 @@
 
 <section>
   <h1>Parks! 🏞🏞🏞</h1>
+  <% if (user) { %>
+    <h2>Add a park!</h2>
+    <form action="/parks" method="POST">
+      <label for="">
+        Name: 
+        <input type="text" name="name" autocomplete="off">
+      </label>
+      <label>
+        Visited? 
+        <input type="checkbox" name="visited">
+      </label>
+      <button type="submit">Add 🏞</button>
+    </form>
+  <% } %>
   <h2>All the Parks!</h2>
   <ul>
     <% parks.forEach(park => { %>
