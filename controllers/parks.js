@@ -1,4 +1,4 @@
-import res from "express/lib/response"
+
 import { Park } from "../models/park.js"
 
 function index(req, res) {
@@ -18,6 +18,20 @@ function index(req, res) {
   })
 }
 
+function create(req, res) {
+  req.body.owner = req.user.profile._id
+  req.body.visitied = !!req.body.visited
+  Park.create(req.body)
+  .then(park => {
+    res.redirect('/parks')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/parks")
+  })  
+}
+
 export {
-  index
+  index,
+  create
 }
