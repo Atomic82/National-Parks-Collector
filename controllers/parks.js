@@ -1,3 +1,4 @@
+import res from "express/lib/response"
 import { Park } from "../models/park.js"
 
 function index(req, res) {
@@ -6,8 +7,14 @@ function index(req, res) {
   .then(parks => {
     res.render('parks/index', {
       parks,
-      titles: "🏞"
+      title: "🏞"
     })
+  })
+  
+
+  .catch(err => {
+  console.log(err)
+  res.redirect("/parks")
   })
 }
 
