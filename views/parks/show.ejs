@@ -1,6 +1,20 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-
+<section>
+  <p>From the collection of <%= park.owner.name %></p>
+  <h1><%= park.name %> 🏞</h1>
+  <h2>This park <%= park.visited ? "I have visited! 😃" : "I haven't been to yet!🤨" %></h2>
+  <% if (user) { %>
+    <form 
+    action="/parks/<%= park._id %>/flip-visited?_method=PATCH"
+    method="POST"
+    >
+  <button class="btn" type="submit">
+    Make park <%= park.visited ? "I haven't been to yet!🤨" : "I have visited! 😃" %>
+  </button>}
+</form>
+<% } %>
+</section>
 
 <%- include('../partials/footer') %>
