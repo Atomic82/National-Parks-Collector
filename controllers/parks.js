@@ -96,6 +96,10 @@ function update(req, res) {
   })
 }
 
+function deletePark(req, res) {
+  
+}
+
 export {
   index,
   create,
