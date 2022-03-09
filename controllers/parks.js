@@ -78,7 +78,22 @@ function edit(req, res) {
 
 
 function update(req, res) {
-  console.log("updating park")
+  Park.findById(req.params.id)
+  .then(park => {
+    if (park.owner.equals(req.user.profile._id)){
+      req.body.visited = !!req.body.visited
+      park.updateOne(req.body, {new: true})
+      .then(() => {
+        res.redirect(`/parks/${park._id}`)
+      })
+    } else {
+      throw new Error("NOT AUTHORIZED") 
+    }
+  })
+  .catch(err => {
+    console.log("the error:", err)
+    res.redirect("/parks")
+  })
 }
 
 export {
@@ -89,5 +104,3 @@ export {
   edit,
   update
 }
-
-
