@@ -62,11 +62,26 @@ function flipVisited(req, res) {
   })
 }
 
+function edit(req, res) {
+  Park.findById(req.params.id)
+  .then(park => {
+    res.render("parks/edit", {
+      park,
+      title: "edit 🏞"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/parks")
+    })
+}
+
 export {
   index,
   create,
   show, 
-  flipVisited
+  flipVisited,
+  edit
 }
 
 

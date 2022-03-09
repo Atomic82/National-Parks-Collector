@@ -14,8 +14,10 @@
     Make park <%= park.visited ? "I haven't been to yet!🤨" : "I have visited! 😃" %>
   </button>}
 </form>
-<% If (park.owner.equals(user?.profile._id)) %> 
-
+<% if (park.owner.equals(user?.profile._id)) %> 
+  <form action="/parks/<%= park._id %>/edit" method="GET"  %> ">
+    <button class="btn" type="submit">Edit this park </button>
+  </form>
 <% } %>
 </section>
 
