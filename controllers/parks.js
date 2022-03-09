@@ -96,8 +96,18 @@ function update(req, res) {
   })
 }
 
-function deletePark(req, res) {
-  
+function deletePark(req, res) { 
+  Park.findById(req.params.id)
+  .then(park => {
+    if (park.owner.equals(req.user.profile._id)) {
+      park.delete()
+      .then(() => {
+      res.redirect("/parks")
+    })
+  } else {
+  throw new Error ("NOT AUTHORIZED")
+    }
+  })
 }
 
 export {
@@ -106,5 +116,6 @@ export {
   show, 
   flipVisited,
   edit,
-  update
+  update,
+  deletePark as delete,
 }
