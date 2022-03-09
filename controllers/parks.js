@@ -47,8 +47,26 @@ function show(req, res) {
   })
 }
 
+function flipVisited(req, res) {
+  Park.findById(req.params.id)
+  .then(park => {
+    park.visited = !park.visited
+    park.save()
+    .then(() => {
+      res.redirect(`/parks/${park._id}`)
+    })
+  })
+  .catch(err => {
+  console.log(err)
+  res.redirect("/parks")
+  })
+}
+
 export {
   index,
   create,
-  show
+  show, 
+  flipVisited
 }
+
+

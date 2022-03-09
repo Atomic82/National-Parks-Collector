@@ -12,6 +12,9 @@ router.get("/:id", parksCtrl.show)
 // POST - localhost:3000/parks
 router.post('/', isLoggedIn, parksCtrl.create)
 
+// PATCH - localhost:3000/parks/:id/flip-visited
+// router.patch("/:id/flip-visited", isLoggedIn, parksCtrl.flipvisited)
+
 export {
   router
 }
