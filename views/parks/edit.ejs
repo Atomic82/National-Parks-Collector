@@ -1,0 +1,26 @@
+<%- include('../partials/html-head') %> 
+<%- include('../partials/nav') %> 
+
+<section>
+  <h1>Edit the park! 🏞</h1>
+<form action="/parks"<%= park._id %>?_method=PUT" method="POST">
+  <label for="">
+    Name: 
+    <input type="text" 
+    name="name" 
+    autocomplete="off"
+    value="<%= park.name %>"
+    >
+  </label>
+  <label>
+    Visited? 
+    <input type="checkbox" 
+    name="visited"
+    <%= park.visited ? "checked" : "" %>
+    >
+  </label>
+  <button type="submit">Edit the 🏞</button>
+</form>
+</section>
+
+<%- include('../partials/footer') %> 

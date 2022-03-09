@@ -76,12 +76,18 @@ function edit(req, res) {
     })
 }
 
+
+function update(req, res) {
+  console.log("updating park")
+}
+
 export {
   index,
   create,
   show, 
   flipVisited,
-  edit
+  edit,
+  update
 }
 
 
