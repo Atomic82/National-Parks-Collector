@@ -20,7 +20,7 @@ function index(req, res) {
 
 function create(req, res) {
   req.body.owner = req.user.profile._id
-  req.body.visitied = !!req.body.visited
+  req.body.visited = !!req.body.visited
   Park.create(req.body)
   .then(park => {
     res.redirect('/parks')
