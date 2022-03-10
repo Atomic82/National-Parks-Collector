@@ -6,7 +6,7 @@ National Parks Collector enables the user to log their visits to America's natur
 
 # Trello Planning🏞
 ----
-Link to [Trello Planning] (https://trello.com/b/ZsAXpnDL/national-parks-collector)
+Link to [Trello Planning](https://trello.com/b/ZsAXpnDL/national-parks-collector)
 
 # Screenshots🏞
 ----
