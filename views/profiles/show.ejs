@@ -14,7 +14,10 @@
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
   <% if (isSelf) { %>
     <h2>Add a trail</h2>
-    <form action="/profiles/<%= profile._id %>/cats" autocomplete="off">
+    <form action="/profiles/<%= profile._id %>/cats" autocomplete="off"
+      autocomplete="off"
+      method="post"
+      >
       <label>
         Name:
         <input type="text" name="name">
@@ -29,6 +32,19 @@
       <button type="submit">Add 🌄</button>
     </form>
   <% } %> 
+  <% if (profile.trails.length) { %>
+      <h2>
+        <%= isSelf ? "You have" : `${profile.name} has` %> trails:
+      </h2>
+      <% profile.trails.forEach(element => { %>
+          <h3>
+            <%= getRandomTrail() %> 
+            <%= trail.name %> is a <% trail.distance %> mile long <%= trail.difficulty %> 
+          </h3>
+      <% }) %> 
+    <% } else { %> 
+
+  <% } %>
 </main>
 
 <%- include('../partials/footer') %>

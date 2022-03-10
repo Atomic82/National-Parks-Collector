@@ -32,7 +32,18 @@ function show(req, res) {
 }
 
 function createTrail(req, res) {
-
+  Profile.findById(req.user.profile._id)
+  .then(profile => {
+    profile.cats.push(req.body)
+    profile.save()
+    .then(() => {
+      res.redirect(`/profiles/${req.user.profile._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect(`/profiles/${req.user.profile._id}`)
+    })
+  })
 }
 
 export {
