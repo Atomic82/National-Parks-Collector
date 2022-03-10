@@ -14,8 +14,19 @@
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
   <% if (isSelf) { %>
     <h2>Add a trail</h2>
-    <form action="/profiles/<%= profile._id %>/cats">
-      
+    <form action="/profiles/<%= profile._id %>/cats" autocomplete="off">
+      <label>
+        Name:
+        <input type="text" name="name">
+      </label>
+      <label>
+        Distance:
+        <input type="number" name="age">
+      </label>
+      <label>
+        <input type="text" name="distance">
+      </label>
+      <button type="submit">Add 🌄</button>
     </form>
   <% } %> 
 </main>
