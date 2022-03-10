@@ -15,6 +15,9 @@ router.get("/:id", isLoggedIn, profilesCtrl.show)
 // POST - localhost:3000/profiles/:id/trails
 router.post("/:id/trails", isLoggedIn, Profile.createTrail)
 
+//DELETE - localhost:3000/profiles/trails/:id
+router.delete("/trails/:id", isLoggedIn, profilesCtrl.deleteTrail)
+
 export {
   router
 }

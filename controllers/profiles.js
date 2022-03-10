@@ -46,8 +46,13 @@ function createTrail(req, res) {
   })
 }
 
+function deleteTrail(req, res) {
+
+}
+
 export {
   index,
   show,
   createTrail,
+  deleteTrail,
 }

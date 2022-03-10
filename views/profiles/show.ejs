@@ -40,6 +40,14 @@
           <h3>
             <%= getRandomTrail() %> 
             <%= trail.name %> is a <% trail.distance %> mile long <%= trail.difficulty %> 
+            <% if (isSelf) { %> 
+              <form
+              action="/profiles/trails/<%= trail.id %>?_method=DELETE"
+              method="post"
+              style="display: inline-block;"
+              >
+              <button type="submit">🌄 <%= trail.name %></button>
+              <% } %>
           </h3>
       <% }) %> 
     <% } else { %> 
