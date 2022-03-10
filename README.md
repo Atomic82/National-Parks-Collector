@@ -14,10 +14,11 @@ National Parks Collector enables the user to log their visits to America's natur
 
 # Stretch goals🏞
 ----
-- l
+- Create national park badge icons to accompany each park log entry.
+- Incorporate pictures of national parks.
 - Make responsive to all devices and breakpoints.
 
-# Technology Used and Implemented💣
+# Technology Used and Implemented🏞
 ----
 
 <a href="a"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
@@ -27,14 +28,3 @@ National Parks Collector enables the user to log their visits to America's natur
 <a href="a"><img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/></a>
 
 <a href="a"><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/></a>
-
-# Credits💣
-----
-Graphic design assets, emotional support, and food delivery: Jo Daniels
-
-Song: Detonator - JAWNS, 
-DMCA free, Owned by [NightMode Records](https://nightmoderecs.com/)
-
-# Freelance Contact💣
-----
-[Atomic82](https://www.atomic82.com/)
