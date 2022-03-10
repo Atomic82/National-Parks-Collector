@@ -24,7 +24,9 @@ Link to [Trello Planning](https://trello.com/b/ZsAXpnDL/national-parks-collector
 
 # User Stories🏞
 ----
-As a user, Tom wanted to track his hikes in Yosemite National Park after visiting the park with his family! National Parks Collector helped keep him straighted out on which trails were difficult and which ones were a breeze!
+Tom wanted to track his hikes in Yosemite National Park after visiting the park with his family! National Parks Collector helped keep him straight on which trails were difficult and which ones were a breeze!
+
+Jo had a competition with her friends to see who could visit the most national parks before the end of the summer. To track her visits, she used National Parks Collector.
 
 # Technology Used and Implemented🏞
 ----
