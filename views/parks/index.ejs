@@ -22,7 +22,7 @@
     <% parks.forEach(park => { %>
         <li>
           🏞 
-          <a href="/parks/"<%= park._id %>"><%= park.name %></a>
+          <a href="/parks/<%= park._id %>"><%= park.name %></a>
           is <%= park.visited ? "visited" : "haven't been yet!"%> </li>
     <% }) %>
   </ul>

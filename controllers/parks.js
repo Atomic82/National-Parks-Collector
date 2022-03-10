@@ -5,6 +5,7 @@ function index(req, res) {
   console.log('Parks')
   Park.find({})
   .then(parks => {
+    console.log('parks', parks)
     res.render('parks/index', {
       parks,
       title: "🏞"
@@ -32,6 +33,7 @@ function create(req, res) {
 }
 
 function show(req, res) {
+  console.log('show function running')
   Park.findById(req.params.id)
   .populate("owner")
   .then(park => {
