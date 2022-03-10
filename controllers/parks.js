@@ -5,7 +5,7 @@ function index(req, res) {
   console.log('Parks')
   Park.find({})
   .then(parks => {
-    res.render('parks/index', {
+    res.render('parks', {
       parks,
       title: "🏞"
     })
@@ -50,6 +50,7 @@ function show(req, res) {
 function flipVisited(req, res) {
   Park.findById(req.params.id)
   .then(park => {
+    console.log("park from flip visited", park)
     park.visited = !park.visited
     park.save()
     .then(() => {

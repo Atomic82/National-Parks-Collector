@@ -1,22 +1,30 @@
 # National Parks Collector🏞
 ----
-[App](https://nationalparkscollector.herokuapp.com/)
+Link to [National Parks Collector](https://nationalparkscollector.herokuapp.com/)
 
 National Parks Collector enables the user to log their visits to America's natural wonders. Users may check off which trails they've hiked, the duration in miles, and the difficulty level.
 
+# Trello Planning🏞
+----
+Link to [Trello Planning] (https://trello.com/b/ZsAXpnDL/national-parks-collector)
+
 # Screenshots🏞
 ----
-![Badge](/assets/Badge.png)
+![Badge](/favicon/favicon.png)
 
 ![Site](/assets/Site.png)
 
 ![Wireframe](/assets/Wireframe.png)
 
-# Stretch goals🏞
+# Ice Box🏞
 ----
 - Create national park badge icons to accompany each park log entry.
 - Incorporate pictures of national parks.
 - Make responsive to all devices and breakpoints.
+
+# User Stories🏞
+----
+As a user, Tom wanted to track his hikes in Yosemite National Park after visiting the park with his family! National Parks Collector helped keep him straighted out on which trails were difficult and which ones were a breeze!
 
 # Technology Used and Implemented🏞
 ----

@@ -18,7 +18,7 @@ router.post('/', isLoggedIn, parksCtrl.create)
 router.put("/:id", isLoggedIn, parksCtrl.update)
 
 // PATCH - localhost:3000/parks/:id/flip-visited
-router.patch("/:id/flip-visited", isLoggedIn, parksCtrl.flipvisited)
+router.patch("/:id/flip-visited", isLoggedIn, parksCtrl.flipVisited)
 
 export {
   router
