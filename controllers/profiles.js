@@ -12,7 +12,11 @@ function index(req, res) {
     res.redirect(`/profiles/${req.user.profile._id}`)
   })
 }
+function show(req, res) {
+  console.log("showing a prof")
+}
 
 export {
   index,
+  show,
 }
