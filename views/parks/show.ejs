@@ -12,11 +12,16 @@
     >
   <button class="btn" type="submit">
     Make park <%= park.visited ? "I haven't been to yet!🤨" : "I have visited! 😃" %>
-  </button>}
+  </button>
 </form>
-<% if (park.owner.equals(user?.profile._id)) %> 
-  <form action="/parks/<%= park._id %>/edit" method="GET"  %> ">
+<% if (park.owner.equals(user?.profile._id)) { %> 
+  <form action="/parks/<%= park._id %>/edit" method="GET">
     <button class="btn" type="submit">Edit this park </button>
+  </form>
+<% } %>
+
+  <form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
+    <button class="btn" type="submit">Delete this park </button>
   </form>
 <% } %>
 </section>

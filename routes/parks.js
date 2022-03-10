@@ -20,6 +20,9 @@ router.put("/:id", isLoggedIn, parksCtrl.update)
 // PATCH - localhost:3000/parks/:id/flip-visited
 router.patch("/:id/flip-visited", isLoggedIn, parksCtrl.flipVisited)
 
+// DELETE - localhost:3000/parks/:id/show
+router.delete("/:id", isLoggedIn, parksCtrl.delete)
+
 export {
   router
 }

@@ -100,17 +100,24 @@ function update(req, res) {
 }
 
 function deletePark(req, res) { 
+  console.log('delete hit')
   Park.findById(req.params.id)
-  .then(park => {
-    if (park.owner.equals(req.user.profile._id)) {
-      park.delete()
-      .then(() => {
+    .then(park => {
+      if (park.owner.equals(req.user.profile._id)) {
+        park.delete()
+          .then(() => {
+            console.log('park deleted')
+            res.redirect("/parks")
+          })
+          .catch(err => {
+            console.log(err)
+            res.redirect("/parks")
+          })
+      }
+    }) .catch(err => {
+      console.log(err)
       res.redirect("/parks")
     })
-  } else {
-  throw new Error ("NOT AUTHORIZED")
-    }
-  })
 }
 
 export {
