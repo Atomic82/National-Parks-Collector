@@ -42,7 +42,7 @@
             <%= trail.name %> is a <% trail.distance %> mile long <%= trail.difficulty %> 
             <% if (isSelf) { %> 
               <form
-              action="/profiles/trails/<%= trail.id %>?_method=DELETE"
+              action="/profiles/trails/<%= profile._id %>/trails/<%= trail.id %>?_method=DELETE"
               method="post"
               style="display: inline-block;"
               >

@@ -47,9 +47,9 @@ function createTrail(req, res) {
 }
 
 function deleteTrail(req, res) {
-  Profile.findById(req.user.profile._id)
+  Profile.findById(req.params.profileId)
   .then(profile => {
-    profile.cats.remove({_id: req.params.id})
+    profile.cats.remove({_id: req.params.trailId})
     profile.save()
     .then(() => {
       res.redirect(`/profiles/${req.user.profile._id}`)
