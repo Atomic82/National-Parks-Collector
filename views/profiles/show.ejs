@@ -43,8 +43,15 @@
           </h3>
       <% }) %> 
     <% } else { %> 
-
+        <h2>
+          <%= isSelf ? "You don't" : `${profile.name} doesn't %> have any trials added!
+        </h2>
   <% } %>
 </main>
+
+<% function getRandomTrail() { %>
+  <% let trails = ["🏞", "🌄", "🏔", "😹"] %>
+  <% return trails[Math.floor(Math.random() * trails.length)] %>
+<% } %> 
 
 <%- include('../partials/footer') %>
