@@ -5,12 +5,19 @@
   <% if (profile.avatar) { %>
     <div>
       <img 
-      src=""
-      alt=""
+      src="<%= profile.avatar %> "
+      alt="<%= profile.name %> avatar"
       class="profile-avatar"
       >
     </div>
   <% } %>
+  <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
+  <% if (isSelf) { %>
+    <h2>Add a trail</h2>
+    <form action="/profiles/<%= profile._id %>/cats">
+      
+    </form>
+  <% } %> 
 </main>
 
 <%- include('../partials/footer') %>
