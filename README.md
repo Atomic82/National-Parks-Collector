@@ -1,71 +1,40 @@
-# MEN Stack with OAuth Template
+# National Parks Collector🏞
+----
+[App](https://nationalparkscollector.herokuapp.com/)
 
-This is a MEN Stack template that includes OAuth.
+National Parks Collector enables the user to log their visits to America's natural wonders. Users may check off which trails they've hiked, the duration in miles, and the difficulty level.
 
-Use this to go build things! 🚀
+# Screenshots🏞
+----
+![Badge](/assets/Badge.png)
 
-## To Use This Template
+![Site](/assets/Site.png)
 
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
+![Wireframe](/assets/Wireframe.png)
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
+# Stretch goals🏞
+----
+- l
+- Make responsive to all devices and breakpoints.
 
-Once you are in the project directory:
+# Technology Used and Implemented💣
+----
 
-```bash
-rm -rf .git
-```
+<a href="a"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
+<a href="a"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></a>
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
+<a href="a"><img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/></a>
 
-Re-initialize a git repository:
+<a href="a"><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/></a>
 
-```bash
-git init
-```
-Use whatever method you'd like to get your project on GitHub. If you're looking for speed though use the GitHub CLI to create a new project repository on GitHub:
+# Credits💣
+----
+Graphic design assets, emotional support, and food delivery: Jo Daniels
 
-```bash
-gh repo create <name-of-your-app-here> --public --source .
-```
-Check out the docs [here](https://cli.github.com/manual/gh_repo_create) if you want to learn more about this command. 
+Song: Detonator - JAWNS, 
+DMCA free, Owned by [NightMode Records](https://nightmoderecs.com/)
 
-Run npm i to fetch the template's dependencies:
-
-```bash
-npm i
-```
-
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CALLBACK=http://localhost:3000/auth/google/oauth2callback
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this README.md and finally, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-You're done!
-# parkscollector
+# Freelance Contact💣
+----
+[Atomic82](https://www.atomic82.com/)

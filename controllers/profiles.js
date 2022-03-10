@@ -34,7 +34,7 @@ function show(req, res) {
 function createTrail(req, res) {
   Profile.findById(req.user.profile._id)
   .then(profile => {
-    profile.cats.push(req.body)
+    profile.trails.push(req.body)
     profile.save()
     .then(() => {
       res.redirect(`/profiles/${req.user.profile._id}`)
@@ -49,7 +49,7 @@ function createTrail(req, res) {
 function deleteTrail(req, res) {
   Profile.findById(req.params.profileId)
   .then(profile => {
-    profile.cats.remove({_id: req.params.trailId})
+    profile.trails.remove({_id: req.params.trailId})
     profile.save()
     .then(() => {
       res.redirect(`/profiles/${req.user.profile._id}`)
