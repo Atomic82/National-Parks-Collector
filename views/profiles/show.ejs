@@ -12,49 +12,15 @@
     </div>
   <% } %>
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
-  <% if (isSelf) { %>
+  <% if (isSelf) { %> 
     <h2>Add a trail</h2>
-    <form action="/profiles/<%= profile._id %>/cats" autocomplete="off"
-      autocomplete="off"
-      method="post"
-      >
+    <form action="/profiles/<%= profile._id %>/trails">
       <label>
         Name:
-        <input type="text" name="name">
+        <input type="text" name="name" autocomplete="off">
       </label>
-      <label>
-        Distance:
-        <input type="number" name="age">
-      </label>
-      <label>
-        <input type="text" name="distance">
-      </label>
-      <button type="submit">Add 🌄</button>
     </form>
-  <% } %> 
-  <% if (profile.trails.length) { %>
-      <h2>
-        <%= isSelf ? "You have" : `${profile.name} has` %> trails:
-      </h2>
-      <% profile.trails.forEach(element => { %>
-          <h3>
-            <%= getRandomTrail() %> 
-            <%= trail.name %> is a <% trail.distance %> mile long <%= trail.difficulty %> 
-            <% if (isSelf) { %> 
-              <form
-              action="/profiles/trails/<%= profile._id %>/trails/<%= trail.id %>?_method=DELETE"
-              method="post"
-              style="display: inline-block;"
-              >
-              <button type="submit">🌄 <%= trail.name %></button>
-              <% } %>
-          </h3>
-      <% }) %> 
-    <% } else { %> 
-        <h2>
-          <%= isSelf ? "You don't" : `${profile.name} doesn't %> have any trials added!
-        </h2>
-  <% } %>
+    <% } %> 
 </main>
 
 <% function getRandomTrail() { %>

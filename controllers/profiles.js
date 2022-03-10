@@ -9,9 +9,11 @@ function index(req, res) {
     })
   })
   .catch(err => {
+    console.log(err)
     res.redirect(`/profiles/${req.user.profile._id}`)
   })
 }
+
 function show(req, res) {
   Profile.findById(req.params.id)
   .then(profile => {
