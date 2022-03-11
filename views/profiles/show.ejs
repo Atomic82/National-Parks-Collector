@@ -11,7 +11,7 @@
       >
     </div>
   <% } %>
-  <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
+  <h1>Welcome <%= isSelf ? "hiker" : profile.name %></h1>
   <% if (isSelf) { %> 
     <h2>Add a trail</h2>
     <form action="/profiles/<%= profile._id %>/trails" method="POST" autocomplete="off">
@@ -32,10 +32,19 @@
     <% } %>
     <% if (profile.trails.length) { %>
       <h2>
-        
+        <%= isSelf ? "You have" : `${profile.name} has` %> trails! Here they are... %>
       </h2>
+      <% profile.trails.forEach(trail => { %>
+        <h3>
+          <%= getRandomTrail() %>
+          <%= trail.name %> is <%= trail.mileage %> miles long - <%= trail.difficulty %>
+      
+        </h3>
+        <% }) %>
       <% } else { %>
-
+        <h2>
+          <%= isSelf ? "You don't have" : `${profile.name} doesn't` %>  trails %>
+        </h2>
         <% } %>
 </main>
 
