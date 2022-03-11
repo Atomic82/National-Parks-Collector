@@ -2,7 +2,7 @@
 <%- include('../partials/nav') %>
 
 <section>
-  <h1>Parks! 🏞🏞🏞</h1>
+  <h1>National Parks</h1>
   <% if (user) { %>
     <h2>Add a park!</h2>
     <form action="/parks" method="POST">
@@ -17,13 +17,13 @@
       <button type="submit">Add 🏞</button>
     </form>
   <% } %>
-  <h2>All the Parks!</h2>
+  <h2>All my parks</h2>
   <ul>
     <% parks.forEach(park => { %>
         <li>
           🏞 
           <a href="/parks/<%= park._id %>"><%= park.name %></a>
-          is <%= park.visited ? "visited" : "haven't been yet!"%> </li>
+          is <%= park.visited ? " a park I have visited!" : " one I haven't been to yet!"%> </li>
     <% }) %>
   </ul>
 </section>

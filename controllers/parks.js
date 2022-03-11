@@ -1,5 +1,6 @@
 
 import { Park } from "../models/park.js"
+import { Trail } from "../models/trail.js"
 
 function index(req, res) {
   console.log('Parks')
@@ -11,13 +12,14 @@ function index(req, res) {
       title: "🏞"
     })
   })
-  
+
 
   .catch(err => {
   console.log(err)
   res.redirect("/parks")
   })
 }
+
 
 function create(req, res) {
   req.body.owner = req.user.profile._id

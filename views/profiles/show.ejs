@@ -14,17 +14,20 @@
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
   <% if (isSelf) { %> 
     <h2>Add a trail</h2>
-    <form action="/profiles/<%= profile._id %>/trails">
+    <form action="/profiles/<%= profile._id %>/trails" method="POST">
       <label>
         Name:
         <input type="text" name="name" autocomplete="off">
+      </label>
+      <label>
+        Difficulty:
       </label>
     </form>
     <% } %> 
 </main>
 
 <% function getRandomTrail() { %>
-  <% let trails = ["🏞", "🌄", "🏔", "😹"] %>
+  <% let trails = ["🏞", "🌄", "🏔"] %>
   <% return trails[Math.floor(Math.random() * trails.length)] %>
 <% } %> 
 
