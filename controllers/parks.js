@@ -9,7 +9,7 @@ function index(req, res) {
     console.log('parks', parks)
     res.render('parks/index', {
       parks,
-      title: "🏞"
+      title: ""
     })
   })
 
