@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: rgba(150, 150, 150, 0.469);
-  background-image: url("public/images/npcbadge.png");
+  background-image: url("public/images/canyonlands.png");
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
