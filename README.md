@@ -21,6 +21,7 @@ National Parks Collector enables the user to log their visits to America's natur
 - Create national park badge icons to accompany each park log entry.
 - Incorporate pictures of national parks.
 - Make responsive to all devices and breakpoints.
+- A mobile app that collects the GPS coordinates of a user to verify they are in, or have been to the park. This would include a leaderboard and competitive twist.
 
 # Technology Used and Implemented🏞
 ----
@@ -36,3 +37,5 @@ National Parks Collector enables the user to log their visits to America's natur
 <a href="a"><img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"/></a>
 
 <a href="a"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/></a>
+
+<a href="a"><img src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"/></a>
