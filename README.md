@@ -10,7 +10,7 @@ Link to [Trello Planning](https://trello.com/b/ZsAXpnDL/national-parks-collector
 
 # Screenshots🏞
 ----
-![Badge](public/images/NPCbadge.png)
+![Badge](public/images/npcbadge.png)
 
 ![Site](/assets/Site.png)
 
@@ -38,3 +38,5 @@ Jo had a competition with her friends to see who could visit the most national p
 <a href="a"><img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/></a>
 
 <a href="a"><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/></a>
+
+<a href="a"><img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"/></a>
