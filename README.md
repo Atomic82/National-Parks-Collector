@@ -10,7 +10,7 @@ Link to [Trello Planning](https://trello.com/b/ZsAXpnDL/national-parks-collector
 
 # Screenshots🏞
 ----
-![Badge](public/images/npcbadge.png)
+![Badge](public/images/npc.png)
 
 ![Site](/assets/Site.png)
 
