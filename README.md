@@ -14,7 +14,7 @@ Link to [Trello Planning](https://trello.com/b/ZsAXpnDL/national-parks-collector
 
 ![Site](/assets/Site.png)
 
-![Wireframe](/assets/Wireframe.png)
+![Wireframe](public/images/wireframe.png)
 
 # Ice Box🏞
 ----
