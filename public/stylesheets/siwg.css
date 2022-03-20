@@ -1,5 +1,6 @@
 .siwg {
   background: url(/images/auth/google/siwg_light_normal.png);
+  background-repeat: no-repeat;
   cursor: pointer;
   border: none;
   width: 10vw;

@@ -16,12 +16,12 @@
 </form>
 <% if (park.owner.equals(user?.profile._id)) { %> 
   <form action="/parks/<%= park._id %>/edit" method="GET">
-    <button class="btn" type="submit">Edit this park </button>
+    <button class="btn" type="submit">EDIT </button>
   </form>
 <% } %>
 
   <form action="/parks/<%= park._id %>?_method=DELETE" method="POST">
-    <button class="btn" type="submit">Delete this park </button>
+    <button class="btn" type="submit">DELETE </button>
   </form>
 <% } %>
 </section>
