@@ -42,7 +42,7 @@ function show(req, res) {
     console.log(park)
     res.render('parks/show', {
       park,
-      title: "🏞 show"
+      title: "show"
     })
   })
   .catch(err => {
@@ -72,7 +72,7 @@ function edit(req, res) {
   .then(park => {
     res.render("parks/edit", {
       park,
-      title: "edit 🏞"
+      title: "edit"
     })
   })
   .catch(err => {

@@ -2,7 +2,7 @@
 <%- include('../partials/nav') %>
 
 <section>
-  <h1>National Parks</h1>
+  <h1></h1>
   <% if (user) { %>
     <h2>Add a park!</h2>
     <form action="/parks" method="POST">
@@ -14,7 +14,7 @@
         Visited? 
         <input type="checkbox" name="visited">
       </label>
-      <button type="submit">Add 🏞</button>
+      <button type="submit">Add</button>
     </form>
   <% } %>
   <h2>All my parks</h2>

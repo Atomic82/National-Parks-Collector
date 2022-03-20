@@ -30,24 +30,43 @@ body {
 
 nav {
   
-  text-decoration: none;
-  color: white;
   font-size: 3rem;
   display: flex;
-  justify-content: space-around;
-  padding: 5px;
+  justify-content: center;
+}
+
+navBar {
+  background-color: red;
 }
 
 main {
-  
+ 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 h1 {
-  font-size: 5rem;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("/images/npc.png");
+  background-repeat: no-repeat;
+  height: 35vh;
+  width: 18vw;
+  /* font-size: 32px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase; */
+  color: #000;
+  
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  border: 3px solid;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+
+  margin: 3vw;
 }
 
 button {
@@ -62,4 +81,10 @@ button {
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
   position: relative;
+}
+
+button:active {
+  box-shadow: 0px;
+  top: 5px;
+  left: 5px;
 }
